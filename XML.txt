@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"
+standalone="no"?>
+
+<configuration>
+	<verbs>
+		<verb>GET</verb>
+		<verb>POST</verb>
+	</verbs>
+	<headers>
+		<rule name="Accept-Charset"
+		    value="ISO-8859-1"/>
+	</headers>
+	<directories>
+		<directory name="shop">
+			<file name="index.jsp"/>
+		<directory name="public">
+			<file name="add.jsp">
+				<argument name="quantity"
+					requiredField="true">
+					<stats maxDigit="100"
+ 						maxLength="3"
+ 						maxLetter="0"
+ 						maxOther="0"
+ 						minDigit="100"
+ 						minLength="1"
+ 						minLetter="0"
+ 						minOther="0"
+ 						special="" />
+				</argument>
+				<argument name="product_name"
+					requiredField="true">
+					<stats maxDigit="0"
+ 						maxLength="15"
+ 						maxLetter="92.94"
+  						maxOther="10.01"
+  						minDigit="0"
+  						minLength="5"
+  						minLetter="89.91"
+  						minOther="7.15"
+  						special="" />
+ 				<argument name="price"
+					requiredField="true">
+					<stats maxDigit="100"
+  						maxLength="3"
+  						maxLetter="0"
+  						maxOther="0"
+  						minDigit="100"
+  						minLength="1"
+  						minLetter="0"
+  						minOther="0"
+  						special="" />
+	</directories>
+</configuration>
